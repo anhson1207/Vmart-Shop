@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vmart Shop</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="https://vmart.exdomain.net/image/catalog/vmart/logo/StyleFavicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Bắt đầu code thôi Cố lên nào Sơn ơi.10/1/2023 -->
+    <div class="app">
+      <!-- header -->
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__logo">
+            <a href="" class="header__logo-link">
+              <img
+                src="./assets/img/header-logo.png"
+                alt=""
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <div class="header__body">
+            <div class="header__search">
+              <input
+                type="search"
+                class="header__search-input"
+                placeholder="Tìm kiếm"
+              />
+              <button class="header__search-button">
+                <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="header__contact">
+              <i class="header__contact-icon fa-solid fa-phone-volume"></i>
+              <div class="header__contact-phone">
+                <p class="header__contact-phone-hotline">Hotline</p>
+                <a href="" class="header__contact-phone-number">0123 456 789</a>
+              </div>
+            </div>
+            <div class="header__account">
+              <i class="header__account-icon fa-regular fa-circle-user"></i>
+              <div class="header__account-content">
+                <p class="header__account-content-acc">Tài khoản</p>
+                <a href="" class="header__account-content-login">Đăng nhập</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__icon">
+            <ul class="header__list-icon">
+              <li class="header__item-icon">
+                <a href="" class="header__link-icon">
+                  <i class="header__icon-icon fa-regular fa-heart"></i>
+                </a>
+              </li>
+              <li class="header__item-icon">
+                <a href="" class="header__link-icon">
+                  <i class="header__icon-icon fa-solid fa-shuffle"></i>
+                </a>
+              </li>
+              <li class="header__item-icon header__item-icon-cart">
+                <a href="" class="header__link-icon">
+                  <i class="header__icon-icon fa-solid fa-bag-shopping"></i>
+                </a>
+                <span class="header__item-icon-cart-quantity">4</span>
+                <!-- cart-empty -->
+                <!-- <div class="header__item-icon-cart--empty">
+                  <img
+                    src="./assets/img/no_cart.png"
+                    alt=""
+                    class="header__item-icon-cart--empty-img"
+                  />
+                  <p class="header__item-icon-cart--empty-desc">
+                    Giỏ hàng của bạn trống!
+                  </p>
+                </div> -->
+                <!-- cart-empty -->
+
+                <div class="header__item-icon-cart--have-product">
+                  <div class="header__item-icon-cart--have-product-body">
+                    <div class="header__cart-item">
+                      <div class="header__cart-content">
+                        <a href="" class="header__cart-link">
+                          <img
+                            src="./assets/img/OPPO-Reno-5.png"
+                            alt=""
+                            class="header__cart-img"
+                          />
+                        </a>
+                        <div class="header__cart-info">
+                          <a href="" class="header__cart-info-name"
+                            >Điện thoại OPPO Reno5 (8GB|128GB)</a
+                          >
+                          <div class="header__cart-info-quantity-and-price">
+                            <span class="header__cart-info-quantity"
+                              >Số lượng: 1</span
+                            >
+                            <span class="header__cart-info-price">
+                              8,690,000đ
+                            </span>
+                          </div>
+                          <a href="" class="header__cart-info-delete">Xóa</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="header__cart-item">
+                      <div class="header__cart-content">
+                        <a href="" class="header__cart-link">
+                          <img
+                            src="./assets/img/galaxy-z.jpg"
+                            alt=""
+                            class="header__cart-img"
+                          />
+                        </a>
+                        <div class="header__cart-info">
+                          <a href="" class="header__cart-info-name"
+                            >Samsung Galaxy Z Fold2 5G</a
+                          >
+                          <div class="header__cart-info-quantity-and-price">
+                            <span class="header__cart-info-quantity"
+                              >Số lượng: 1</span
+                            >
+                            <span class="header__cart-info-price">
+                              55,000,000đ
+                            </span>
+                          </div>
+                          <a href="" class="header__cart-info-delete">Xóa</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="header__cart-item">
+                      <div class="header__cart-content">
+                        <a href="" class="header__cart-link">
+                          <img
+                            src="./assets/img/laptop MSI Gaming.jpg"
+                            alt=""
+                            class="header__cart-img"
+                          />
+                        </a>
+                        <div class="header__cart-info">
+                          <a href="" class="header__cart-info-name"
+                            >Laptop MSI Gaming GL65 LEOPARD 10SCXK-089VN</a
+                          >
+                          <div class="header__cart-info-quantity-and-price">
+                            <span class="header__cart-info-quantity"
+                              >Số lượng: 1</span
+                            >
+                            <span class="header__cart-info-price">
+                              24,990,000đ
+                            </span>
+                          </div>
+                          <a href="" class="header__cart-info-delete">Xóa</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="header__cart-item">
+                      <div class="header__cart-content">
+                        <a href="" class="header__cart-link">
+                          <img
+                            src="./assets/img/laptop-dell-xps.jpg"
+                            alt=""
+                            class="header__cart-img"
+                          />
+                        </a>
+                        <div class="header__cart-info">
+                          <a href="" class="header__cart-info-name"
+                            >Laptop Dell XPS 13 9310 i5 1135G7/8GB/256GB/13.4
+                            inch FHDTouch/Win 10</a
+                          >
+                          <div class="header__cart-info-quantity-and-price">
+                            <span class="header__cart-info-quantity"
+                              >Số lượng: 1</span
+                            >
+                            <span class="header__cart-info-price">
+                              42,990,000đ
+                            </span>
+                          </div>
+                          <a href="" class="header__cart-info-delete">Xóa</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__item-icon-cart--have-product-footer">
+                    <div class="header__cart-sum-price">
+                      <span class="header__cart-sum-price-text"
+                        >Thành tiền:</span
+                      >
+                      <span class="header__cart-sum-price-number"
+                        >131,670,000đ</span
+                      >
+                    </div>
+                    <button class="header__cart-button-payment">
+                      Thanh toán
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+
+      <!-- menu -->
+      <div class="menu">
+        <div class="container menu__container">
+          <div class="menu__title">
+            <i class="menu__title-icon fa-solid fa-bars"></i>
+            <span class="menu__title-text">Danh mục sản phẩm</span>
+            <div class="menu__title-product">
+              <ul class="menu__title-list">
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="background-image: url(./assets/img/máy-ảnh.png)"
+                    >Máy ảnh
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Máy ảnh Canon
+                      </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Máy ảnh Sony </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Máy ảnh Nikon
+                      </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Máy ảnh Leica
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="
+                      background-image: url(./assets/img/máy-chơi-game.png);
+                    "
+                    >Máy chơi game
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Sony PS5 </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Sony PS4 </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Microsoft Xbox
+                      </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Nitendo </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="background-image: url(./assets/img/loa-để-bàn.png)"
+                    >Loa để bàn
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Loa Bluetooth
+                      </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"
+                        >Loa để bàn/Loa máy tính</a
+                      >
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Loa tivi </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Loa thanh </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="background-image: url(./assets/img/tai-nghe.png)"
+                    >Tai nghe
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Tai nghe có dây
+                      </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"
+                        >Tai nghe bluetooth
+                      </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Tai nghe True wireless
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="background-image: url(./assets/img/smartwatch.png)"
+                    >Smartwatch
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Apple Watch </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Samsung </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Garmin </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Xiaomi </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="
+                      background-image: url(./assets/img/chuột-máy-tính.png);
+                    "
+                    >Chuột máy tính
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Akko </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">Fuhlen </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Logitech </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Razer </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="background-image: url(./assets/img/bàn-phím.png)"
+                    >Bàn phím
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">Leopold </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">Logitech</a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Steelseries </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Filco </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="background-image: url(./assets/img/laptop.png)"
+                    >Laptop
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Laptop Asus </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">Laptop Dell </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">Laptop HP </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Laptop Lenovo
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a
+                    href=""
+                    class="menu__title-link"
+                    style="
+                      background-image: url(./assets/img/máy-tính-bảng.png);
+                    "
+                    >Máy tính bảng
+                    <i class="menu__title-product-icon fa fa-angle-right"></i>
+                  </a>
+                  <ul class="menu__title-list-sub">
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Ipad Pro </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Ipad Air </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub"> Ipad Mini </a>
+                    </li>
+                    <li class="menu__title-item-sub">
+                      <a href="" class="menu__title-link-sub">
+                        Samsung Tablet
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__title-item">
+                  <a href="" class="menu__title-link">
+                    <i
+                      class="menu__title-product-icon-plus fa fa-plus-circle"
+                    ></i>
+                    Xem thêm</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="menu__nav">
+            <ul class="menu__nav-list">
+              <li class="menu__nav-item">
+                <a href="" class="menu__nav-link">Trang chủ</a>
+              </li>
+              <li class="menu__nav-item">
+                <a href="" class="menu__nav-link">Giới thiệu</a>
+              </li>
+              <li class="menu__nav-item">
+                <a href="" class="menu__nav-link menu__nav-link--caret-down"
+                  >Sản phẩm</a
+                >
+                <ul class="menu__nav-list-small">
+                  <li class="menu__nav-item-small">
+                    <a
+                      href=""
+                      class="menu__nav-link-small menu__nav-link-small--caret-right"
+                    >
+                      Điện thoại
+                    </a>
+                    <ul class="list__product-small">
+                      <li class="item__product-small">
+                        <a href="" class="link-product__small">Apple</a>
+                      </li>
+                      <li class="item__product-small">
+                        <a href="" class="link-product__small">Samsung</a>
+                      </li>
+                      <li class="item__product-small">
+                        <a href="" class="link-product__small">Xiaomi</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__nav-item-small">
+                    <a href="" class="menu__nav-link-small"> Tai nghe </a>
+                  </li>
+                  <li class="menu__nav-item-small">
+                    <a href="" class="menu__nav-link-small"> Loa để bàn </a>
+                  </li>
+                  <li class="menu__nav-item-small">
+                    <a href="" class="menu__nav-link-small"> Bàn phím </a>
+                  </li>
+                  <li class="menu__nav-item-small">
+                    <a href="" class="menu__nav-link-small">Chuột máy tính </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__nav-item">
+                <a href="" class="menu__nav-link">Tin tức</a>
+              </li>
+              <li class="menu__nav-item">
+                <a href="" class="menu__nav-link">Tuyển dụng</a>
+              </li>
+              <li class="menu__nav-item">
+                <a href="" class="menu__nav-link">Liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- menu -->
+
+      <!-- content -->
+      <div class="content">
+        <!-- slider -->
+        <div class="slider">
+          <div class="container">
+            <div class="slider__container">
+              <a href="" class="slider__container-link">
+                <img
+                  src="./assets/img/Slider.png"
+                  alt=""
+                  class="slider__container-img"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- slider -->
+
+        <!-- category -->
+        <div class="category">
+          <div class="container category__container">
+            <ul class="category__list">
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/bàn-phím.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Bàn phím</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/chuột-máy-tính.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Chuột máy tính</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/laptop.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Laptop</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/loa-để-bàn.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Loa để bàn</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/máy-chơi-game.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Máy chơi game</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/máy-tính-bảng.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Máy tính bảng</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/máy-ảnh.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Máy ảnh</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/smartwatch.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Smartwatch</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/tai-nghe.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Tai nghe</a>
+                </p>
+              </li>
+              <li class="category__item">
+                <a href="" class="category__item-link">
+                  <img
+                    src="./assets/img/điện-thoại.png"
+                    alt=""
+                    class="category__item-img"
+                  />
+                </a>
+                <p class="category__item-name">
+                  <a href="" class="category__item-name-link">Điện thoại</a>
+                </p>
+              </li>
+            </ul>
+            <button class="button-around-left button-around--disabled">
+              <i class="button-around-left-icon fa-solid fa-angle-left"></i>
+            </button>
+            <button class="button-around-right">
+              <i class="button-around-right-icon fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- category -->
+
+        <!-- tab-product -->
+        <div class="tab-product">
+          <div class="container">
+            <ul class="tab-product__nav">
+              <li class="tab-produtc__item tab-product__item--current">
+                <h2 class="tab-product__item-title">Điện thoại</h2>
+                <p class="tab-product__item-sale-off">
+                  Giảm Ngay 1 Triệu Khi Mua Online
+                </p>
+              </li>
+              <li class="tab-produtc__item">
+                <h2 class="tab-product__item-title">Chuột máy tính</h2>
+                <p class="tab-product__item-sale-off">
+                  Giảm Giá Cực Lớn Lên Tới 70%
+                </p>
+              </li>
+              <li class="tab-produtc__item">
+                <h2 class="tab-product__item-title">Bàn phím</h2>
+                <p class="tab-product__item-sale-off">
+                  Giá Siêu Ưu Đãi Lên Tới 30%
+                </p>
+              </li>
+            </ul>
+            <div class="tab-product__container">
+              <div class="tap-banner">
+                <a href="" class="tap-banner__link">
+                  <img
+                    src="./assets/img/banner_tab-product.png"
+                    alt=""
+                    class="tab-banner__img"
+                  />
+                </a>
+              </div>
+              <div class="tap-contentfill">
+                <ul class="tap-contentfill__list">
+                  <li class="tap-contentfill__item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/điện-thoại-OPPO-Reno-5.png"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Điện thoại OPPO Reno5 (8GB|128GB)
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">8,690,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tap-contentfill__item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/điện-thoại-galaxy-z-fold2-5g.jpg"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Samsung Galaxy Z Fold2 5G
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">55,000,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tap-contentfill__item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/ss-s20-ultra-den.jpg"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Samsung Galaxy S20 Ultra
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">29,990,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tap-contentfill__item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/samsung-galaxynote-20-ultra-vangdong.jpg"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Samsung Galaxy Note 20 Ultra
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">29,990,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tap-contentfill__item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/samsung-galaxy-note-10-lite.jpg"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Samsung Galaxy Note 10 Lite
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">11,490,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <button
+                  class="button-around-left button-around__contentfill button-around__contentfill-left button-around--disabled"
+                >
+                  <i class="button-around-left-icon fa-solid fa-angle-left"></i>
+                </button>
+                <button
+                  class="button-around-right button-around__contentfill button-around__contentfill-right"
+                >
+                  <i
+                    class="button-around-right-icon fa-solid fa-angle-right"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tab-product -->
+
+        <!-- tech -->
+        <div class="tech">
+          <div class="container tech__container">
+            <div class="swap">
+              <h2 class="title-product">
+                <a href="" class="title-product__link">Laptop</a>
+              </h2>
+              <ul class="heading-product-list">
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">Laptop</a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">Laptop Asus</a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">Laptop Dell</a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">Laptop HP</a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">Laptop Lenovo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tech-content">
+              <div class="tech-picture">
+                <a href="" class="tech-picture__link">
+                  <img
+                    src="./assets/img/banner_tech-laptop.png"
+                    alt=""
+                    class="tech-picture-img"
+                  />
+                </a>
+              </div>
+              <ul class="tech-list">
+                <li class="tech-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-tech hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/laptop-dell-xps-1.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Laptop Dell XPS 13 9310 i5 1135G7/8GB/256GB/13.4 inch
+                        FHDTouch/Win 10
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">42,990,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="tech-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-tech hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/laptop-asus-zenbook.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Laptop Asus ZenBook Duo UX481FL BM048T i5
+                        10210U/8GB/512GB SSD/WIN10
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">22,900,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="tech-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-tech hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/laptop-MSi-Gaming-GF63.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Laptop MSI Gaming GF63 THIN 10SCXR-1218VN
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">20,990,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="tech-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-tech hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/laptop-MSi-Gaming-GL65.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Laptop MSI Gaming GL65 LEOPARD 10SCXK-089VN
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">24,990,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- tech -->
+
+        <!-- fashion-ipad -->
+        <div class="fashion">
+          <div class="container fashion__container">
+            <div class="swap">
+              <h2 class="title-product">
+                <a href="" class="title-product__link">Máy tính bảng</a>
+              </h2>
+              <ul class="heading-product-list">
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> Máy tính Bảng</a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> iPad Air </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> iPad Mini </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> iPad Pro </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> Samsung Tablet </a>
+                </li>
+              </ul>
+            </div>
+            <div class="fashion-content">
+              <div class="fashion-picture">
+                <a href="" class="fashion-picture__link">
+                  <img
+                    src="./assets/img/banner_maytinhbang.png"
+                    alt=""
+                    class="fashion-picture-img"
+                  />
+                </a>
+              </div>
+              <ul class="fashion-list">
+                <li class="fashion-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-fashion hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/ipad-air-2020-blue.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Apple iPad Air 10.9 2020 Wi-Fi 64GB Chính Hãng Apple
+                        Việt Nam
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">21,500,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="fashion-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-fashion hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/ipad-pro-11-4G.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Apple iPad Pro 11 2020 4G 128GB Chính Hãng Apple Việt
+                        Nam
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">21,500,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="fashion-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-fashion hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/ipad-pro-11-wifi.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Apple iPad Pro 11 2020 Wi-Fi 128GB Chính Hãng Apple Việt
+                        Nam
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">21,500,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- fashion-ipad -->
+
+        <!-- fashion-airpod -->
+        <div class="fashion">
+          <div class="container fashion__container">
+            <div class="swap">
+              <h2 class="title-product">
+                <a href="" class="title-product__link">Thiết bị âm thanh</a>
+              </h2>
+              <ul class="heading-product-list">
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> Loa Bluetooth </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> Loa thanh </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> Loa Tivi </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">
+                    Loa để bàn / Loa Máy tính
+                  </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">
+                    Tai nghe bluetooth
+                  </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link"> Tai nghe có dây </a>
+                </li>
+                <li class="heading-product-item">
+                  <a href="" class="heading-product-link">
+                    Tai nghe True wireless
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="fashion-content">
+              <div class="fashion-picture">
+                <a href="" class="fashion-picture__link">
+                  <img
+                    src="./assets/img/banner_amthanh.png"
+                    alt=""
+                    class="fashion-picture-img"
+                  />
+                </a>
+              </div>
+              <ul class="fashion-list">
+                <li class="fashion-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-fashion hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/Tai-nghe-không-dây-Huawei-Freebuds-Pro.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Tai nghe không dây Huawei Freebuds Pro
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">4,490,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="fashion-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-fashion hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/Tai-nghe-không-dây-chống-ồn-Sony-WF-1000XM3.png"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Tai nghe không dây chống ồn Sony WF-1000XM3
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">5,490,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="fashion-item">
+                  <div class="product-heading">
+                    <a
+                      href=""
+                      class="product-heading__link product-heading__link-fashion hover-zoom-image-link"
+                    >
+                      <img
+                        src="./assets/img/Tai-nghe-Bluetooth-Samsung-Galaxy-Buds -Live.jpg"
+                        alt=""
+                        class="product-heading__img hover-zoom-image"
+                      />
+                    </a>
+                    <div class="product-action-wrapper">
+                      <div class="product-action">
+                        <a href="" class="product-action-link">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="" class="product-action-link">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-info__name">
+                      <a href="" class="product-info__link">
+                        Tai nghe Bluetooth Samsung Galaxy Buds Live
+                      </a>
+                    </h3>
+                    <div class="product-info__price-box">
+                      <span class="product-info__price">4,990,000đ</span>
+                      <button class="product-cart">
+                        <img
+                          src="./assets/img/shopping-cart (1).png"
+                          alt=""
+                          class="product-cart-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- fashion-airpod -->
+
+        <!-- iwish -->
+        <div class="iwish">
+          <div class="container iwish__container">
+            <div class="swap">
+              <h2 class="title-product">
+                <a href="" class="title-product__link">Gợi ý hôm nay</a>
+              </h2>
+            </div>
+            <div class="iwish-content-wrapper">
+              <div class="iwish-content">
+                <ul class="iwish-list">
+                  <li class="iwish-item">
+                    <span class="product-item__sale">-50%</span>
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link product-heading__link-iwish hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/chuột-Logitech-GPro-Hero.png"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Chuột Logitech G Pro Hero
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">890,000đ</span>
+                        <span class="product-info__price-old">1,790,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="iwish-item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link product-heading__link-iwish hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/chuột-Logitech-Gaming.jpg"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Chuột gaming Logitech G300S
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">399,000đ</span>
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="iwish-item">
+                    <span class="product-item__sale">-17%</span>
+
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link product-heading__link-iwish hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/chuột-Logitech-M331.png"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Chuột không dây Logitech M331 Silent
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">330,000đ</span>
+                        <span class="product-info__price-old">399,000đ</span>
+
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="iwish-item">
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link product-heading__link-iwish hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/Tai-nghe-không-dây-chống-ồn-Sony-WF-1000XM3.png"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Tai nghe không dây chống ồn Sony WF-1000XM3
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">5,490,000đ</span>
+
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="iwish-item">
+                    <span class="product-item__sticker-sale"></span>
+                    <div class="product-heading">
+                      <a
+                        href=""
+                        class="product-heading__link product-heading__link-iwish hover-zoom-image-link"
+                      >
+                        <img
+                          src="./assets/img/điện-thoại-OPPO-Reno-5.png"
+                          alt=""
+                          class="product-heading__img hover-zoom-image"
+                        />
+                      </a>
+                      <div class="product-action-wrapper">
+                        <div class="product-action">
+                          <a href="" class="product-action-link">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="" class="product-action-link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-info__name">
+                        <a href="" class="product-info__link">
+                          Điện thoại OPPO Reno5 (8GB|128GB)
+                        </a>
+                      </h3>
+                      <div class="product-info__price-box">
+                        <span class="product-info__price">8,690,000đ</span>
+
+                        <button class="product-cart">
+                          <img
+                            src="./assets/img/shopping-cart (1).png"
+                            alt=""
+                            class="product-cart-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <i
+                class="button-around-left-icon button-around-icon-iwish button-around-left-icon-iwish button-around-icon-iwish--disabled fa-solid fa-angle-left"
+              ></i>
+              <i
+                class="button-around-right-icon button-around-icon-iwish button-around-right-icon-iwish fa-solid fa-angle-right"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- iwish -->
+
+        <!-- latest news -->
+        <div class="latest-news">
+          <div class="container">
+            <div class="swap">
+              <h2 class="title-product">
+                <a href="" class="title-product__link">Tin tức mới nhất</a>
+              </h2>
+            </div>
+            <div class="latest-news__content">
+              <div class="latest-news-picture">
+                <a href="" class="latest-news-picture__link">
+                  <img
+                    src="./assets/img/Ke_thay_doi_cuoc_choi_ve_camera.png"
+                    alt=""
+                    class="latest-news-picture-img"
+                  />
+                </a>
+                <h3 class="latest-news-picture__desc">
+                  <a href="" class="latest-news-picture__desc-link">
+                    Kẻ thay đổi cuộc chơi về camera trên smartphone 5G
+                  </a>
+                </h3>
+              </div>
+              <div class="latest-news__info">
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/Airpod3_san_xuat_tai_Viet_Nam.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        AirPods 3 sản xuất tại Việt Nam bị người Trung Quốc chê
+                        chất lượng kém
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        160
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        15/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/iFixit_mo_xe_gie_lau_cua_Apple.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        iFixit "mổ bụng" giẻ lau của Apple, chấm điểm 0/10 về
+                        khả năng sửa chữa
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        472
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        12/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/Review_chi_tiet_Macbook_Pro_2021.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        Review chi tiết Macbook Pro 2021
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        159
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        15/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/viettle-tang-qua.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        Viettel đang tặng người dùng 3GB truy cập Internet miễn
+                        phí, áp dụng
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        158
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        16/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-news__info">
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/Galaxy_Z_Fold3_va_Z_Flip3.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        Galaxy Z Fold 3 và Z Flip 3 sẽ có giá rẻ hơn
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        136
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        14/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/JohnWich_an_mung_dong_may.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        Ăn mừng John Wick 4 đóng máy, Keanu Reeves tặng đội đóng
+                        thế mỗi người 1 chiếc đồng hồ Rolex trị giá gần 10.000
+                        USD
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        143
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        16/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/TV_Samsung_dang_giam_gia_manh.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        TV Samsung đang giảm giá mạnh, có mẫu giảm tới 15 triệu
+                        để kích cầu
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        115
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        16/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="latest-news__item">
+                  <div class="latest-news__item-avatar">
+                    <a href="" class="latest-news__item-link">
+                      <img
+                        src="./assets/img/Airpod3_san_xuat_tai_Viet_Nam.png"
+                        alt=""
+                        class="latest-news__item-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="latest-news__item-desc">
+                    <h3 class="latest-news__item-desc-title">
+                      <a href="" class="latest-news__item-desc-title-link">
+                        Đã có thể bật tính năng chạy ứng dụng Android trên bản
+                        Windows 11 hiện hành, cài được nhiều ứng dụng hơn cả bản
+                        xịn
+                      </a>
+                    </h3>
+                    <div class="latest-news__item-desc-viewd">
+                      <span class="latest-news__item-desc-viewd-quantity">
+                        <i class="fa fa-eye"></i>
+                        135
+                      </span>
+                      <span class="latest-news__item-desc-viewd-calendar">
+                        <i class="fa fa-calendar"></i>
+                        15/1/2023
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- latest news -->
+      </div>
+      <!-- content -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__location">
+          <div class="container footer__location-container">
+            <div class="footer__item">
+              <h4 class="footer__item-title">THIÊN ĐƯỜNG MUA SẮM VMART</h4>
+              <ul class="footer__list-menu">
+                <li class="footer__item-menu">
+                  Địa chỉ: A12, Đinh Tiên Hoàng, Q. Hoàn Kiếm, Hà Nội
+                </li>
+                <li class="footer__item-menu">
+                  Điện thoại:
+                  <a href="" class="footer__link-menu">0123456789</a>
+                </li>
+                <li class="footer__item-menu">
+                  Email:
+                  <a href="" class="footer__link-menu"
+                    >contact@yourdomain.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__item">
+              <h4 class="footer__item-title">Vmart</h4>
+              <ul class="footer__list-menu">
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    <i class="fa fa-map-marked"></i>
+                    Xem bản đồ đường đi
+                  </a>
+                </li>
+                <a href="" class="footer__phone-and-address">
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="fa fa-map-marker-alt"></i>
+                      Điện thoại: 0123 456 789
+                    </a>
+                  </li>
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="fa-solid fa-phone"></i>
+                      Địa chỉ: A12, Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội
+                    </a>
+                  </li>
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="fa fa-envelope"></i>
+                      Email: contact@yourdomain.com
+                    </a>
+                  </li>
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="far fa-clock"></i>
+                      Giờ mở cửa: Các ngày trong tuần: 9h00 - 22h00
+                    </a>
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="footer__item">
+              <h4 class="footer__item-title">Cửa hàng</h4>
+              <ul class="footer__list-menu">
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    <i class="fa fa-map-marked"></i>
+                    Xem bản đồ đường đi
+                  </a>
+                </li>
+                <a href="" class="footer__phone-and-address">
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="fa fa-map-marker-alt"></i>
+                      Điện thoại: +84123456789
+                    </a>
+                  </li>
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="fa-solid fa-phone"></i>
+                      Địa chỉ: A12 Phan Đình Phùng,, Phường Quán Thánh, Ba Đình,
+                      Hà Nội
+                    </a>
+                  </li>
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="fa fa-envelope"></i>
+                      Email: contact@yourdomain.com
+                    </a>
+                  </li>
+                  <li class="footer__item-menu">
+                    <a href="" class="footer__link-menu">
+                      <i class="far fa-clock"></i>
+                      Giờ mở cửa: Các ngày trong tuần: 9h00 - 22h00
+                    </a>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="container footer__info-container">
+            <div class="footer__item footer__info-item">
+              <h4 class="footer__item-title">Thông tin</h4>
+              <ul class="footer__list-menu">
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu"> Về chúng tôi </a>
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    Điều khoản & Điều kiện
+                  </a>
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu"> Chính sách bảo mật </a>
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    Chính sách thanh toán
+                  </a>
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    Chính sách giao hàng
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__item footer__info-item">
+              <h4 class="footer__item-title">Tổng đài hỗ trợ</h4>
+              <ul class="footer__list-menu">
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    Gọi mua: 0123456789 (7:30 - 22:00)
+                  </a>
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    Kỹ thuật: 0123456789 (7:30 - 22:00)
+                  </a>
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu"
+                    >Khiếu nại: 0123456789 (8:00 - 21:30)</a
+                  >
+                </li>
+                <li class="footer__item-menu">
+                  <a href="" class="footer__link-menu">
+                    Bảo hành: 0123456789 (8:00 - 21:00)
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__social">
+                <a
+                  href=""
+                  class="footer__social-link footer__social-link-facebook"
+                >
+                  <i
+                    class="footer__social-icon footer__social-icon-facebook fab fa-facebook-f"
+                  ></i>
+                </a>
+                <a
+                  href=""
+                  class="footer__social-link footer__social-link-twitter"
+                >
+                  <i
+                    class="footer__social-icon footer__social-icon-twitter fab fa-twitter"
+                  ></i>
+                </a>
+                <a
+                  href=""
+                  class="footer__social-link footer__social-link-youtube"
+                >
+                  <i
+                    class="footer__social-icon footer__social-icon-youtube fab fa-youtube"
+                  ></i>
+                </a>
+                <a
+                  href=""
+                  class="footer__social-link footer__social-link-instagram"
+                >
+                  <i
+                    class="footer__social-icon footer__social-icon-instagram fab fa-instagram"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__item footer__info-item">
+              <h4 class="footer__item-title">Facebook</h4>
+              <div class="footer__facebook">
+                <img
+                  src="./assets/img/background-facebok.jpg"
+                  alt=""
+                  class="footer__facebook-background"
+                />
+                <div class="footer__facebook-heading">
+                  <a href="" class="footer__facebook-heading-link">
+                    <img
+                      src="./assets/img/facebook.png"
+                      alt=""
+                      class="footer__facebook-heading-img"
+                    />
+                  </a>
+                  <div class="footer__facebook-heading-desc">
+                    <a href="" class="footer__facebook-heading-desc-title">
+                      Facebook
+                      <i
+                        class="footer__facebook-heading-icon fa-solid fa-circle-check"
+                      ></i>
+                    </a>
+                    <span class="footer__facebook-heading-desc-liked"
+                      >178.516.564 lượt thích</span
+                    >
+                  </div>
+                </div>
+
+                <div class="footer__facebook-footer">
+                  <div class="footer__facebook-footer-like-page">
+                    <a href="" class="footer__facebook-footer-like-page-link">
+                      <i
+                        class="footer__facebook-footer-like-page-icon fa-brands fa-square-facebook"
+                      ></i>
+                      Thích trang
+                    </a>
+                  </div>
+                  <div class="footer__facebook-footer-share">
+                    <a href="" class="footer__facebook-footer-share-link">
+                      <i class="fa-solid fa-share"></i>
+                      Chia sẻ
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__info-company">
+          <div class="container footer__info-company-container">
+            <p class="footer__info-company-text">
+              © 2018. Công ty cổ phần Vmart. GPDKKD: 000000000 do sở KH & ĐT
+              TP.Hà Nội cấp ngày 02/01/2007. GPMXH: 000/GP-BTTTT do Bộ Thông Tin
+              và Truyền Thông cấp ngày 04/06/2020. Địa chỉ: A12 Đinh Tiên Hoàng,
+              Quận Hoàn Kiến, TP.Hà Nội. Điện thoại: 0123456789. Email:
+              contact@yourdomain.com. Chịu trách nhiệm nội dung: Nguyễn Văn A
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <div class="container">
+            <p class="footer__copyright-text">
+              © Copyright 2021-2023 Vmart.Thiết kế bởi
+              <a href="" class="footer__copyright-link">Zozo</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- footer -->
+
+      <!-- Finish 16/1/2023 -->
+    </div>
+  </body>
+</html>
